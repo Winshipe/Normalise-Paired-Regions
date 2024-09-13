@@ -1,0 +1,4 @@
+#first			second
+contig_18658:1-200	contig_7144:1-200
+contig_18658:1000-1200	contig_7144:2000-2200
+contig_18756:8000-9000	contig_2724:857000-858000
