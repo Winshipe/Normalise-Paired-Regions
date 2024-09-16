@@ -55,6 +55,7 @@ fn read_records(bam_file3: &mut bam::IndexedReader, bam_file25: &mut bam::Indexe
         }
     }
 }
+
 fn normalize_region(bam_file3: &mut bam::IndexedReader, bam_file25: &mut bam::IndexedReader, out3: &mut bam::Writer, out25: &mut bam::Writer, region3: &str, region25: &str, min_covg: &f64) -> (){
     let (scaff3, start3, end3) = split_region_str(&region3);
     let (scaff25, start25, end25) = split_region_str(&region25);
@@ -64,11 +65,15 @@ fn normalize_region(bam_file3: &mut bam::IndexedReader, bam_file25: &mut bam::In
     let mut reads25: Vec<Record> = Vec::with_capacity(5000);
     let mut rng = rand::thread_rng();
     read_records(bam_file3, bam_file25, &mut reads3, &mut reads25);
-    if reads3.len() > reads25.len() {
-        let nreads = reads25.len();// sample 3 down to the same number of reads as 25
+    let reads_per_base3 = (reads3.len() as f64) / ((end3 - start3) as f64);
+    let reads_per_base25 = (reads25.len() as f64) / ((end25 - start25) as f64);
+    if reads_per_base3 > reads_per_base25 {
+        //theoretically I could move the if else contents to their own fn but that makes printing the regions
+        // in order harder for not much much more readability
+        let nreads = (reads3.len() as f64 * (reads_per_base25 / reads_per_base3)) as usize;// sample 3 down to the same number of reads as 25
         let mut covg = 0.0;
         if nreads > 0 {
-            covg = ((nreads * reads25[0].seq_len()) as f64)   / ((end25 - start25) as f64);
+            covg = ((nreads * reads3[0].seq_len()) as f64)   / ((end3 - start3) as f64);
         }
         if(covg < *min_covg){
             println!("Skipping {} {} because they are under the minimum coverage ({:.2})",region3, region25, covg);
@@ -82,10 +87,10 @@ fn normalize_region(bam_file3: &mut bam::IndexedReader, bam_file25: &mut bam::In
             }
         }
     } else { // same as above but backwards
-        let nreads = reads3.len(); //(fraction * (reads25.len() as f64)) as usize; // dont need to compute a fraction when using choose_multiple
+        let nreads = (reads25.len() as f64 * (reads_per_base3 / reads_per_base25)) as usize;// sample 3 down to the same number of reads as 25
         let mut covg = 0.0;
         if nreads > 0 {
-            covg = ((nreads * reads3[0].seq_len()) as f64)   / ((end25 - start25) as f64);
+            covg = ((nreads * reads25[0].seq_len()) as f64)   / ((end25 - start25) as f64);
         }
         if(covg < *min_covg){
             println!("Skipping {} {} because they are under the minimum coverage ({:.2})",region3, region25, covg);            
