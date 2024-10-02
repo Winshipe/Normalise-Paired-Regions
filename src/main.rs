@@ -55,6 +55,7 @@ fn complain_and_return_0(scaff: &String, start: i64, end: i64) -> usize {
     return 0;
 }
 fn unwrap_one_more_layer(result: &mut rust_htslib::errors::Result<bam::Record>, scaff: &String, start: i64, end: i64) -> usize{
+    //println!("One more layer");
     let output = match result {
         Err(r) => complain_and_return_0(scaff, start, end),
         Ok(r) => r.seq_len() //friggin' finally
@@ -63,6 +64,7 @@ fn unwrap_one_more_layer(result: &mut rust_htslib::errors::Result<bam::Record>, 
 }
 fn get_read_len(bam_file: &mut bam::IndexedReader, scaff: &String, start: i64, end: i64) -> usize {
     //this thing is packaged as an Option<Result<type>> so gotta do some work to unwrap it
+    bam_file.fetch((&scaff, start, end));
     let possible_read = bam_file.records().next();
     let read_len = match possible_read {
         None => complain_and_return_0(scaff, start, end),
@@ -79,6 +81,7 @@ fn normalize_region_set(bam_files: &mut Vec<bam::IndexedReader>, out_files: &mut
         let (scaff, start, end) = split_regions[i].clone();
         bam_files[i].fetch((&scaff, start, end));
         let reads_per_base = (bam_files[i].records().count() as f64) / ((end - start) as f64);
+        //let read_len = bam_files[i].records().next().unwrap().seq_len() as f64;
         let read_len = get_read_len(&mut bam_files[i], &scaff, start, end) as f64;
         coverages.push(reads_per_base * read_len);
     }
@@ -91,74 +94,24 @@ fn normalize_region_set(bam_files: &mut Vec<bam::IndexedReader>, out_files: &mut
         let covg = &coverages[i];
         bam_files[i].fetch((&scaff, start, end));
         read_records(&mut bam_files[i], &mut reads);
-        let covg_ratio = smallest_covg / covg;
+        let mut covg_ratio = smallest_covg / covg;
         if covg_ratio > 1.0 {
-            println!("Skipping {}:{}-{} because it is under the minimum coverage ({:.2} : {})",scaff, start, end, covg, min_covg);
-            continue;
+            println!("Keeping {}:{}-{} as is because it is under the minimum coverage ({:.2} : {})",scaff, start, end, covg, min_covg);
+            covg_ratio = 1.0;
+        } else if covg_ratio == 1.0 {
+            println!("Keeping {}:{}-{} as is  ({:.2} : {:.2})",scaff, start, end, covg, smallest_covg);
+        } else {
+            println!("Normalizing region {}:{}-{} from {:.2} to {:.2}x covg",scaff, start, end, covg, smallest_covg);
         }
         let nreads = (covg_ratio * (reads.len() as f64)) as usize;
         let mut indices: Vec<usize> = sample(&mut rng, reads.len(), nreads).into_iter().collect();
         for idx in indices{
+            out_files[i].write(&reads[idx]);
+        }
+    }
+}
 
-        }
-    }
-}
-/*        if reads_per_base3 > reads_per_base25 {
-        //theoretically I could move the if else contents to their own fn but that makes printing the regions
-        // in order harder for not much much more readability
-        let nreads = (reads3.len() as f64 * (reads_per_base25 / reads_per_base3)) as usize;// sample 3 down to the same number of reads as 25
-        let mut covg = 0.0;
-        if nreads > 0 {
-            covg = ((nreads * reads3[0].seq_len()) as f64)   / ((end3 - start3) as f64);
-        }
-        if(covg < *min_covg){
-            println!("Skipping {} {} because they are under the minimum coverage ({:.2})",region3, region25, covg);
-        } else {
-            println!("Region 1 {} Region 2 {}; # reads in 1: {} # reads in 2: {}; downsampling region 1 to {} reads ({:.2}x)", region3, region25, reads3.len(), reads25.len(), nreads, covg);
-            let mut indices: Vec<usize> = sample(&mut rng, reads25.len(), nreads).into_iter().collect();
-            indices.sort();            
-            //for record in reads3.choose_multiple(&mut rng, nreads){ //downsample and write to new bam, comes from rand::
-            for idx in indices{
-                out3.write(&reads3[idx]);
-                //out3.write(&record);
-            }
-            for record in reads25 {
-                out25.write(&record);
-            }
-        }
-    } else { // same as above but backwards
-        let nreads = (reads25.len() as f64 * (reads_per_base3 / reads_per_base25)) as usize;// sample 3 down to the same number of reads as 25
-        let mut covg = 0.0;
-        if nreads > 0 {
-            covg = ((nreads * reads25[0].seq_len()) as f64)   / ((end25 - start25) as f64);
-        }
-        if(covg < *min_covg){
-            println!("Skipping {} {} because they are under the minimum coverage ({:.2})",region3, region25, covg);            
-        } else {
-            println!("Region 1 {} Region 2 {}; # reads in 1 {} # reads in 2 {}; downsampling region 2 to {} reads ({:.2}x)", region3, region25, reads3.len(), reads25.len(), nreads, covg);
-            let mut indices: Vec<usize> = sample(&mut rng, reads25.len(), nreads).into_iter().collect();
-            indices.sort();
-            //for record in reads25.choose_multiple(&mut rng, nreads){
-            for idx in indices{
-                out25.write(&reads25[idx]);
-            }
-            for record in reads3 {
-                out3.write(&record);
-            }
-        }
-    }
-}
-    */
 fn normalize_given_regions(in_paths: &Vec<String>, out_paths: &Vec<String>, region_sets: Vec<Vec<String>>, min_covg: f64){
-    /*let mut bam_file3 = bam::IndexedReader::from_path(path3).expect("Cannot open bam 3 file!");
-    let mut bam_file25 = bam::IndexedReader::from_path(path25).expect("Cannot open bam 25 file!");
-    let mut bam_header3 = bam::Header::from_template(bam_file3.header());
-    let mut bam_header25 = bam::Header::from_template(bam_file25.header());
-    
-    let mut out3 = bam::Writer::from_path(outpath3, &bam_header3, bam::Format::Bam).expect("Cannot open bam file 3 for writing!");
-    let mut out25 = bam::Writer::from_path(outpath25, &bam_header25, bam::Format::Bam).expect("Cannot open bam file 25 for writing!");
-    */
-
     let mut in_bam_files = Vec::<bam::IndexedReader>::with_capacity(in_paths.len());
     let mut in_bam_headers = Vec::<bam::Header>::with_capacity(in_paths.len());
     let mut out_bam_files = Vec::<bam::Writer>::with_capacity(in_paths.len());
@@ -181,42 +134,14 @@ fn normalize_given_regions(in_paths: &Vec<String>, out_paths: &Vec<String>, regi
 }
 fn build_argparser() -> Command {
     let output = Command::new("Normalize Paired Regions") //CLAP, pretty neat but short codes are very limiting
-        .about("Normalizes coverage between paired regions given by a tab separated file ie chr:1-1000<tab>chr2:1000-2000")
-        /* .arg(Arg::new("bam_1")
-            .help("Path to first BAM file")
-            .short('1')
-            .long("bam_1")
-            .value_name("PATH")
-            .required(true)
-        )
-        .arg(Arg::new("bam_2")
-            .help("Path to second BAM file")
-            .short('2')
-            .long("bam_2")
-            .value_name("PATH")
-            .required(true)
-        )*/
+        .about("Normalizes coverage between regions given by a tab separated file\nie chr:1-1000<tab>chr2:1000-2000<tab>...")
         .arg(Arg::new("regions")
             .help("Path to tab-separated regions file")
             .short('r')
             .long("regions")
             .value_name("PATH")
             .required(true)
-        )/*
-        .arg(Arg::new("output_1")
-            .help("Output path for 1st BAM file")
-            .short('o')
-            .long("output_1")
-            .value_name("PATH")
-            .required(false)
         )
-        .arg(Arg::new("output_2")
-            .help("Output path for 1st BAM file")
-            .short('n')
-            .long("output_2")
-            .value_name("PATH")
-            .required(false)
-        )*/
         .arg(Arg::new("bams")
             .help("Paths to bam files, must match # of cols in regions file! ./bam_1 ./bam_2 [... ./bam_n]")
             .short('b')
