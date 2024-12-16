@@ -1,0 +1,562 @@
+cargo:rerun-if-changed=curl
+OPT_LEVEL = Some(3)
+TARGET = Some(x86_64-apple-darwin)
+OUT_DIR = Some(/Users/ewinship/Documents/Projects/Sediments/normalize_paired_regions/target/release/build/curl-sys-7a3e9a10ef47c4d7/out)
+HOST = Some(x86_64-apple-darwin)
+cargo:rerun-if-env-changed=CC_x86_64-apple-darwin
+CC_x86_64-apple-darwin = None
+cargo:rerun-if-env-changed=CC_x86_64_apple_darwin
+CC_x86_64_apple_darwin = None
+cargo:rerun-if-env-changed=HOST_CC
+HOST_CC = None
+cargo:rerun-if-env-changed=CC
+CC = None
+cargo:rerun-if-env-changed=CC_ENABLE_DEBUG_OUTPUT
+RUSTC_WRAPPER = None
+cargo:rerun-if-env-changed=CRATE_CC_NO_DEFAULTS
+CRATE_CC_NO_DEFAULTS = None
+DEBUG = Some(false)
+cargo:rerun-if-env-changed=MACOSX_DEPLOYMENT_TARGET
+MACOSX_DEPLOYMENT_TARGET = None
+cargo:rerun-if-env-changed=CFLAGS_x86_64-apple-darwin
+CFLAGS_x86_64-apple-darwin = None
+cargo:rerun-if-env-changed=CFLAGS_x86_64_apple_darwin
+CFLAGS_x86_64_apple_darwin = None
+cargo:rerun-if-env-changed=HOST_CFLAGS
+HOST_CFLAGS = None
+cargo:rerun-if-env-changed=CFLAGS
+CFLAGS = None
+cargo:rustc-link-lib=clang_rt.osx
+cargo:rustc-link-search=/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/lib/darwin
+cargo:root=/Users/ewinship/Documents/Projects/Sediments/normalize_paired_regions/target/release/build/curl-sys-7a3e9a10ef47c4d7/out
+cargo:include=/Users/ewinship/Documents/Projects/Sediments/normalize_paired_regions/target/release/build/curl-sys-7a3e9a10ef47c4d7/out/include
+cargo:static=1
+cargo:rustc-cfg=libcurl_vendored
+cargo:rustc-cfg=link_libz
+/Library/Developer/CommandLineTools
+unable to determine Xcode version, assuming >= 9
+TARGET = Some(x86_64-apple-darwin)
+OPT_LEVEL = Some(3)
+HOST = Some(x86_64-apple-darwin)
+cargo:rerun-if-env-changed=CC_x86_64-apple-darwin
+CC_x86_64-apple-darwin = None
+cargo:rerun-if-env-changed=CC_x86_64_apple_darwin
+CC_x86_64_apple_darwin = None
+cargo:rerun-if-env-changed=HOST_CC
+HOST_CC = None
+cargo:rerun-if-env-changed=CC
+CC = None
+cargo:rerun-if-env-changed=CC_ENABLE_DEBUG_OUTPUT
+RUSTC_WRAPPER = None
+cargo:rerun-if-env-changed=CRATE_CC_NO_DEFAULTS
+CRATE_CC_NO_DEFAULTS = None
+DEBUG = Some(false)
+cargo:rerun-if-env-changed=MACOSX_DEPLOYMENT_TARGET
+MACOSX_DEPLOYMENT_TARGET = None
+cargo:rerun-if-env-changed=CFLAGS_x86_64-apple-darwin
+CFLAGS_x86_64-apple-darwin = None
+cargo:rerun-if-env-changed=CFLAGS_x86_64_apple_darwin
+CFLAGS_x86_64_apple_darwin = None
+cargo:rerun-if-env-changed=HOST_CFLAGS
+HOST_CFLAGS = None
+cargo:rerun-if-env-changed=CFLAGS
+CFLAGS = None
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+cargo:warning=curl/lib/mprintf.c:1004:8: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+cargo:warning=      (sprintf)(work, formatbuf, iptr->val.dnum);
+cargo:warning=       ^
+cargo:warning=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdio.h:180:1: note: 'sprintf' has been explicitly marked deprecated here
+cargo:warning=__deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+cargo:warning=^
+cargo:warning=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:215:48: note: expanded from macro '__deprecated_msg'
+cargo:warning=        #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+cargo:warning=                                                      ^
+cargo:warning=1 warning generated.
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+cargo:warning=curl/lib/vtls/sectransp.c:614:7: warning: 'CFURLCreateDataAndPropertiesFromResource' is deprecated: first deprecated in macOS 10.9 - For resource data, use the CFReadStream API. For file resource properties, use CFURLCopyResourcePropertiesForKeys. [-Wdeprecated-declarations]
+cargo:warning=      CFURLCreateDataAndPropertiesFromResource(NULL,
+cargo:warning=      ^
+cargo:warning=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFURLAccess.h:52:9: note: 'CFURLCreateDataAndPropertiesFromResource' has been explicitly marked deprecated here
+cargo:warning=Boolean CFURLCreateDataAndPropertiesFromResource(CFAllocatorRef alloc, CFURLRef url, CFDataRef *resourceData, CFDictionaryRef *properties, CFArrayRef desiredProperties, SInt32 *errorCode) API_DEPRECATED("For resource data, use the CFReadStream API. For file resource properties, use CFURLCopyResourcePropertiesForKeys.", macos(10.0,10.9), ios(2.0,7.0), watchos(2.0,2.0), tvos(9.0,9.0));
+cargo:warning=        ^
+cargo:warning=curl/lib/vtls/sectransp.c:740:17: warning: 'kTLSProtocol1' is deprecated: first deprecated in macOS 10.15 [-Wdeprecated-declarations]
+cargo:warning=      ver_min = kTLSProtocol1;
+cargo:warning=                ^
+cargo:warning=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Security.framework/Headers/SecProtocolTypes.h:157:5: note: 'kTLSProtocol1' has been explicitly marked deprecated here
+cargo:warning=    kTLSProtocol1 CF_ENUM_DEPRECATED(10_2, 10_15, 5_0, 13_0) = 4,
+cargo:warning=    ^
+cargo:warning=curl/lib/vtls/sectransp.c:743:17: warning: 'kTLSProtocol11' is deprecated: first deprecated in macOS 10.15 [-Wdeprecated-declarations]
+cargo:warning=      ver_min = kTLSProtocol11;
+cargo:warning=                ^
+cargo:warning=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Security.framework/Headers/SecProtocolTypes.h:158:5: note: 'kTLSProtocol11' has been explicitly marked deprecated here
+cargo:warning=    kTLSProtocol11 CF_ENUM_DEPRECATED(10_2, 10_15, 5_0, 13_0) = 7,
+cargo:warning=    ^
+cargo:warning=curl/lib/vtls/sectransp.c:746:17: warning: 'kTLSProtocol12' is deprecated: first deprecated in macOS 10.15 [-Wdeprecated-declarations]
+cargo:warning=      ver_min = kTLSProtocol12;
+cargo:warning=                ^
+cargo:warning=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Security.framework/Headers/SecProtocolTypes.h:159:5: note: 'kTLSProtocol12' has been explicitly marked deprecated here
+cargo:warning=    kTLSProtocol12 CF_ENUM_DEPRECATED(10_2, 10_15, 5_0, 13_0) = 8,
+cargo:warning=    ^
+cargo:warning=curl/lib/vtls/sectransp.c:759:17: warning: 'kTLSProtocol12' is deprecated: first deprecated in macOS 10.15 [-Wdeprecated-declarations]
+cargo:warning=      ver_max = kTLSProtocol12;
+cargo:warning=                ^
+cargo:warning=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Security.framework/Headers/SecProtocolTypes.h:159:5: note: 'kTLSProtocol12' has been explicitly marked deprecated here
+cargo:warning=    kTLSProtocol12 CF_ENUM_DEPRECATED(10_2, 10_15, 5_0, 13_0) = 8,
+cargo:warning=    ^
+cargo:warning=curl/lib/vtls/sectransp.c:762:17: warning: 'kTLSProtocol11' is deprecated: first deprecated in macOS 10.15 [-Wdeprecated-declarations]
+cargo:warning=      ver_max = kTLSProtocol11;
+cargo:warning=                ^
+cargo:warning=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Security.framework/Headers/SecProtocolTypes.h:158:5: note: 'kTLSProtocol11' has been explicitly marked deprecated here
+cargo:warning=    kTLSProtocol11 CF_ENUM_DEPRECATED(10_2, 10_15, 5_0, 13_0) = 7,
+cargo:warning=    ^
+cargo:warning=curl/lib/vtls/sectransp.c:765:17: warning: 'kTLSProtocol1' is deprecated: first deprecated in macOS 10.15 [-Wdeprecated-declarations]
+cargo:warning=      ver_max = kTLSProtocol1;
+cargo:warning=                ^
+cargo:warning=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Security.framework/Headers/SecProtocolTypes.h:157:5: note: 'kTLSProtocol1' has been explicitly marked deprecated here
+cargo:warning=    kTLSProtocol1 CF_ENUM_DEPRECATED(10_2, 10_15, 5_0, 13_0) = 4,
+cargo:warning=    ^
+cargo:warning=curl/lib/vtls/sectransp.c:772:9: warning: 'SSLSetProtocolVersionMin' is deprecated: first deprecated in macOS 10.15 - No longer supported. Use Network.framework. [-Wdeprecated-declarations]
+cargo:warning=  err = SSLSetProtocolVersionMin(backend->ssl_ctx, ver_min);
+cargo:warning=        ^
+cargo:warning=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Security.framework/Headers/SecureTransport.h:458:1: note: 'SSLSetProtocolVersionMin' has been explicitly marked deprecated here
+cargo:warning=SSLSetProtocolVersionMin  (SSLContextRef      context,
+cargo:warning=^
+cargo:warning=curl/lib/vtls/sectransp.c:777:9: warning: 'SSLSetProtocolVersionMax' is deprecated: first deprecated in macOS 10.15 - No longer supported. Use Network.framework. [-Wdeprecated-declarations]
+cargo:warning=  err = SSLSetProtocolVersionMax(backend->ssl_ctx, ver_max);
+cargo:warning=        ^
+cargo:warning=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Security.framework/Headers/SecureTransport.h:494:1: note: 'SSLSetProtocolVersionMax' has been explicitly marked deprecated here
+cargo:warning=SSLSetProtocolVersionMax  (SSLContextRef      context,
+cargo:warning=^
+cargo:warning=curl/lib/vtls/sectransp.c:867:9: warning: 'SSLGetNumberSupportedCiphers' is deprecated: first deprecated in macOS 10.15 - No longer supported. Use Network.framework. [-Wdeprecated-declarations]
+cargo:warning=  err = SSLGetNumberSupportedCiphers(ssl_ctx, len);
+cargo:warning=        ^
+cargo:warning=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Security.framework/Headers/SecureTransport.h:818:1: note: 'SSLGetNumberSupportedCiphers' has been explicitly marked deprecated here
+cargo:warning=SSLGetNumberSupportedCiphers (SSLContextRef                     context,
+cargo:warning=^
+cargo:warning=curl/lib/vtls/sectransp.c:875:9: warning: 'SSLGetSupportedCiphers' is deprecated: first deprecated in macOS 10.15 - No longer supported. Use Network.framework. [-Wdeprecated-declarations]
+cargo:warning=  err = SSLGetSupportedCiphers(ssl_ctx, ciphers, len);
+cargo:warning=        ^
+cargo:warning=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Security.framework/Headers/SecureTransport.h:832:1: note: 'SSLGetSupportedCiphers' has been explicitly marked deprecated here
+cargo:warning=SSLGetSupportedCiphers           (SSLContextRef                 context,
+cargo:warning=^
+cargo:warning=curl/lib/vtls/sectransp.c:937:9: warning: 'SSLSetEnabledCiphers' is deprecated: first deprecated in macOS 10.15 - No longer supported. Use Network.framework. [-Wdeprecated-declarations]
+cargo:warning=  err = SSLSetEnabledCiphers(ssl_ctx, ciphers, count);
+cargo:warning=        ^
+cargo:warning=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Security.framework/Headers/SecureTransport.h:865:1: note: 'SSLSetEnabledCiphers' has been explicitly marked deprecated here
+cargo:warning=SSLSetEnabledCiphers            (SSLContextRef                  context,
+cargo:warning=^
+cargo:warning=curl/lib/vtls/sectransp.c:1005:9: warning: 'SSLSetEnabledCiphers' is deprecated: first deprecated in macOS 10.15 - No longer supported. Use Network.framework. [-Wdeprecated-declarations]
+cargo:warning=  err = SSLSetEnabledCiphers(ssl_ctx, selected, count);
+cargo:warning=        ^
+cargo:warning=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Security.framework/Headers/SecureTransport.h:865:1: note: 'SSLSetEnabledCiphers' has been explicitly marked deprecated here
+cargo:warning=SSLSetEnabledCiphers            (SSLContextRef                  context,
+cargo:warning=^
+cargo:warning=curl/lib/vtls/sectransp.c:1058:7: warning: 'SSLCreateContext' is deprecated: first deprecated in macOS 10.15 - No longer supported. Use Network.framework. [-Wdeprecated-declarations]
+cargo:warning=  if(&SSLCreateContext) {  /* use the newer API if available */
+cargo:warning=      ^
+cargo:warning=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Security.framework/Headers/SecureTransport.h:316:1: note: 'SSLCreateContext' has been explicitly marked deprecated here
+cargo:warning=SSLCreateContext(CFAllocatorRef __nullable alloc, SSLProtocolSide protocolSide, SSLConnectionType connectionType)
+cargo:warning=^
+cargo:warning=curl/lib/vtls/sectransp.c:1061:24: warning: 'SSLCreateContext' is deprecated: first deprecated in macOS 10.15 - No longer supported. Use Network.framework. [-Wdeprecated-declarations]
+cargo:warning=    backend->ssl_ctx = SSLCreateContext(NULL, kSSLClientSide, kSSLStreamType);
+cargo:warning=                       ^
+cargo:warning=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Security.framework/Headers/SecureTransport.h:316:1: note: 'SSLCreateContext' has been explicitly marked deprecated here
+cargo:warning=SSLCreateContext(CFAllocatorRef __nullable alloc, SSLProtocolSide protocolSide, SSLConnectionType connectionType)
+cargo:warning=^
+cargo:warning=curl/lib/vtls/sectransp.c:1061:47: warning: 'kSSLClientSide' is deprecated: first deprecated in macOS 10.15 [-Wdeprecated-declarations]
+cargo:warning=    backend->ssl_ctx = SSLCreateContext(NULL, kSSLClientSide, kSSLStreamType);
+cargo:warning=                                              ^
+cargo:warning=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Security.framework/Headers/SecureTransport.h:218:5: note: 'kSSLClientSide' has been explicitly marked deprecated here
+cargo:warning=    kSSLClientSide CF_ENUM_DEPRECATED(10_2, 10_15, 2_0, 13_0)
+cargo:warning=    ^
+cargo:warning=curl/lib/vtls/sectransp.c:1061:63: warning: 'kSSLStreamType' is deprecated: first deprecated in macOS 10.15 [-Wdeprecated-declarations]
+cargo:warning=    backend->ssl_ctx = SSLCreateContext(NULL, kSSLClientSide, kSSLStreamType);
+cargo:warning=                                                              ^
+cargo:warning=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Security.framework/Headers/SecureTransport.h:223:5: note: 'kSSLStreamType' has been explicitly marked deprecated here
+cargo:warning=    kSSLStreamType CF_ENUM_DEPRECATED(10_2, 10_15, 2_0, 13_0),
+cargo:warning=    ^
+cargo:warning=curl/lib/vtls/sectransp.c:1111:13: warning: 'SSLSetALPNProtocols' is deprecated: first deprecated in macOS 10.15 - No longer supported. Use Network.framework. [-Wdeprecated-declarations]
+cargo:warning=      err = SSLSetALPNProtocols(backend->ssl_ctx, alpnArr);
+cargo:warning=            ^
+cargo:warning=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Security.framework/Headers/SecureTransport.h:1332:1: note: 'SSLSetALPNProtocols' has been explicitly marked deprecated here
+cargo:warning=SSLSetALPNProtocols         (SSLContextRef      context,
+cargo:warning=^
+cargo:warning=curl/lib/vtls/sectransp.c:1179:13: warning: 'SSLSetCertificate' is deprecated: first deprecated in macOS 10.15 - No longer supported. Use Network.framework. [-Wdeprecated-declarations]
+cargo:warning=      err = SSLSetCertificate(backend->ssl_ctx, certs);
+cargo:warning=            ^
+cargo:warning=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Security.framework/Headers/SecureTransport.h:637:1: note: 'SSLSetCertificate' has been explicitly marked deprecated here
+cargo:warning=SSLSetCertificate                       (SSLContextRef          context,
+cargo:warning=^
+cargo:warning=curl/lib/vtls/sectransp.c:1240:7: warning: 'SSLSetSessionOption' is deprecated: first deprecated in macOS 10.15 - No longer supported. Use Network.framework. [-Wdeprecated-declarations]
+cargo:warning=  if(&SSLSetSessionOption && darwinver_maj >= 13) {
+cargo:warning=      ^
+cargo:warning=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Security.framework/Headers/SecureTransport.h:384:1: note: 'SSLSetSessionOption' has been explicitly marked deprecated here
+cargo:warning=SSLSetSessionOption                     (SSLContextRef          context,
+cargo:warning=^
+cargo:warning=curl/lib/vtls/sectransp.c:1246:11: warning: 'SSLSetSessionOption' is deprecated: first deprecated in macOS 10.15 - No longer supported. Use Network.framework. [-Wdeprecated-declarations]
+cargo:warning=    err = SSLSetSessionOption(backend->ssl_ctx,
+cargo:warning=          ^
+cargo:warning=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Security.framework/Headers/SecureTransport.h:384:1: note: 'SSLSetSessionOption' has been explicitly marked deprecated here
+cargo:warning=SSLSetSessionOption                     (SSLContextRef          context,
+cargo:warning=^
+cargo:warning=curl/lib/vtls/sectransp.c:1247:31: warning: 'kSSLSessionOptionBreakOnServerAuth' is deprecated: first deprecated in macOS 10.15 [-Wdeprecated-declarations]
+cargo:warning=                              kSSLSessionOptionBreakOnServerAuth,
+cargo:warning=                              ^
+cargo:warning=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Security.framework/Headers/SecureTransport.h:99:2: note: 'kSSLSessionOptionBreakOnServerAuth' has been explicitly marked deprecated here
+cargo:warning=        kSSLSessionOptionBreakOnServerAuth CF_ENUM_DEPRECATED(10_2, 10_15, 2_0, 13_0) = 0,
+cargo:warning=        ^
+cargo:warning=curl/lib/vtls/sectransp.c:1290:11: warning: 'SSLSetPeerDomainName' is deprecated: first deprecated in macOS 10.15 - No longer supported. Use Network.framework. [-Wdeprecated-declarations]
+cargo:warning=    err = SSLSetPeerDomainName(backend->ssl_ctx, server, strlen(server));
+cargo:warning=          ^
+cargo:warning=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Security.framework/Headers/SecureTransport.h:686:1: note: 'SSLSetPeerDomainName' has been explicitly marked deprecated here
+cargo:warning=SSLSetPeerDomainName            (SSLContextRef          context,
+cargo:warning=^
+cargo:warning=curl/lib/vtls/sectransp.c:1323:7: warning: 'SSLSetSessionOption' is deprecated: first deprecated in macOS 10.15 - No longer supported. Use Network.framework. [-Wdeprecated-declarations]
+cargo:warning=  if(&SSLSetSessionOption) {
+cargo:warning=      ^
+cargo:warning=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Security.framework/Headers/SecureTransport.h:384:1: note: 'SSLSetSessionOption' has been explicitly marked deprecated here
+cargo:warning=SSLSetSessionOption                     (SSLContextRef          context,
+cargo:warning=^
+cargo:warning=curl/lib/vtls/sectransp.c:1324:5: warning: 'SSLSetSessionOption' is deprecated: first deprecated in macOS 10.15 - No longer supported. Use Network.framework. [-Wdeprecated-declarations]
+cargo:warning=    SSLSetSessionOption(backend->ssl_ctx, kSSLSessionOptionSendOneByteRecord,
+cargo:warning=    ^
+cargo:warning=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Security.framework/Headers/SecureTransport.h:384:1: note: 'SSLSetSessionOption' has been explicitly marked deprecated here
+cargo:warning=SSLSetSessionOption                     (SSLContextRef          context,
+cargo:warning=^
+cargo:warning=curl/lib/vtls/sectransp.c:1324:43: warning: 'kSSLSessionOptionSendOneByteRecord' is deprecated: first deprecated in macOS 10.15 [-Wdeprecated-declarations]
+cargo:warning=    SSLSetSessionOption(backend->ssl_ctx, kSSLSessionOptionSendOneByteRecord,
+cargo:warning=                                          ^
+cargo:warning=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Security.framework/Headers/SecureTransport.h:123:5: note: 'kSSLSessionOptionSendOneByteRecord' has been explicitly marked deprecated here
+cargo:warning=    kSSLSessionOptionSendOneByteRecord CF_ENUM_DEPRECATED(10_2, 10_15, 2_0, 13_0) = 4,
+cargo:warning=    ^
+cargo:warning=curl/lib/vtls/sectransp.c:1326:5: warning: 'SSLSetSessionOption' is deprecated: first deprecated in macOS 10.15 - No longer supported. Use Network.framework. [-Wdeprecated-declarations]
+cargo:warning=    SSLSetSessionOption(backend->ssl_ctx, kSSLSessionOptionFalseStart,
+cargo:warning=    ^
+cargo:warning=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Security.framework/Headers/SecureTransport.h:384:1: note: 'SSLSetSessionOption' has been explicitly marked deprecated here
+cargo:warning=SSLSetSessionOption                     (SSLContextRef          context,
+cargo:warning=^
+cargo:warning=curl/lib/vtls/sectransp.c:1326:43: warning: 'kSSLSessionOptionFalseStart' is deprecated: first deprecated in macOS 10.15 [-Wdeprecated-declarations]
+cargo:warning=    SSLSetSessionOption(backend->ssl_ctx, kSSLSessionOptionFalseStart,
+cargo:warning=                                          ^
+cargo:warning=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Security.framework/Headers/SecureTransport.h:117:5: note: 'kSSLSessionOptionFalseStart' has been explicitly marked deprecated here
+cargo:warning=    kSSLSessionOptionFalseStart CF_ENUM_DEPRECATED(10_2, 10_15, 2_0, 13_0) = 3,
+cargo:warning=    ^
+cargo:warning=curl/lib/vtls/sectransp.c:1340:13: warning: 'SSLSetPeerID' is deprecated: first deprecated in macOS 10.15 - No longer supported. Use Network.framework. [-Wdeprecated-declarations]
+cargo:warning=      err = SSLSetPeerID(backend->ssl_ctx, ssl_sessionid, ssl_sessionid_len);
+cargo:warning=            ^
+cargo:warning=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Security.framework/Headers/SecureTransport.h:1285:1: note: 'SSLSetPeerID' has been explicitly marked deprecated here
+cargo:warning=SSLSetPeerID                            (SSLContextRef          context,
+cargo:warning=^
+cargo:warning=curl/lib/vtls/sectransp.c:1359:13: warning: 'SSLSetPeerID' is deprecated: first deprecated in macOS 10.15 - No longer supported. Use Network.framework. [-Wdeprecated-declarations]
+cargo:warning=      err = SSLSetPeerID(backend->ssl_ctx, ssl_sessionid, ssl_sessionid_len);
+cargo:warning=            ^
+cargo:warning=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Security.framework/Headers/SecureTransport.h:1285:1: note: 'SSLSetPeerID' has been explicitly marked deprecated here
+cargo:warning=SSLSetPeerID                            (SSLContextRef          context,
+cargo:warning=^
+cargo:warning=curl/lib/vtls/sectransp.c:1375:9: warning: 'SSLSetIOFuncs' is deprecated: first deprecated in macOS 10.15 - No longer supported. Use Network.framework. [-Wdeprecated-declarations]
+cargo:warning=  err = SSLSetIOFuncs(backend->ssl_ctx,
+cargo:warning=        ^
+cargo:warning=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Security.framework/Headers/SecureTransport.h:418:1: note: 'SSLSetIOFuncs' has been explicitly marked deprecated here
+cargo:warning=SSLSetIOFuncs                           (SSLContextRef          context,
+cargo:warning=^
+cargo:warning=curl/lib/vtls/sectransp.c:1383:9: warning: 'SSLSetConnection' is deprecated: first deprecated in macOS 10.15 - No longer supported. Use Network.framework. [-Wdeprecated-declarations]
+cargo:warning=  err = SSLSetConnection(backend->ssl_ctx, cf);
+cargo:warning=        ^
+cargo:warning=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Security.framework/Headers/SecureTransport.h:657:1: note: 'SSLSetConnection' has been explicitly marked deprecated here
+cargo:warning=SSLSetConnection                        (SSLContextRef                  context,
+cargo:warning=^
+cargo:warning=curl/lib/vtls/sectransp.c:1592:9: warning: 'SSLCopyPeerTrust' is deprecated: first deprecated in macOS 10.15 - No longer supported. Use Network.framework. [-Wdeprecated-declarations]
+cargo:warning=  ret = SSLCopyPeerTrust(ctx, &trust);
+cargo:warning=        ^
+cargo:warning=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Security.framework/Headers/SecureTransport.h:1261:1: note: 'SSLCopyPeerTrust' has been explicitly marked deprecated here
+cargo:warning=SSLCopyPeerTrust                        (SSLContextRef          context,
+cargo:warning=^
+cargo:warning=curl/lib/vtls/sectransp.c:1615:9: warning: 'SecTrustEvaluate' is deprecated: first deprecated in macOS 10.15 [-Wdeprecated-declarations]
+cargo:warning=  ret = SecTrustEvaluate(trust, &trust_eval);
+cargo:warning=        ^~~~~~~~~~~~~~~~
+cargo:warning=        SecTrustEvaluateWithError
+cargo:warning=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Security.framework/Headers/SecTrust.h:364:10: note: 'SecTrustEvaluate' has been explicitly marked deprecated here
+cargo:warning=OSStatus SecTrustEvaluate(SecTrustRef trust, SecTrustResultType *result)
+cargo:warning=         ^
+cargo:warning=curl/lib/vtls/sectransp.c:1710:11: warning: 'SSLCopyPeerTrust' is deprecated: first deprecated in macOS 10.15 - No longer supported. Use Network.framework. [-Wdeprecated-declarations]
+cargo:warning=    ret = SSLCopyPeerTrust(ctx, &trust);
+cargo:warning=          ^
+cargo:warning=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Security.framework/Headers/SecureTransport.h:1261:1: note: 'SSLCopyPeerTrust' has been explicitly marked deprecated here
+cargo:warning=SSLCopyPeerTrust                        (SSLContextRef          context,
+cargo:warning=^
+cargo:warning=curl/lib/vtls/sectransp.c:1714:14: warning: 'SecTrustCopyPublicKey' is deprecated: first deprecated in macOS 11.0 [-Wdeprecated-declarations]
+cargo:warning=    keyRef = SecTrustCopyPublicKey(trust);
+cargo:warning=             ^~~~~~~~~~~~~~~~~~~~~
+cargo:warning=             SecTrustCopyKey
+cargo:warning=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Security.framework/Headers/SecTrust.h:476:11: note: 'SecTrustCopyPublicKey' has been explicitly marked deprecated here
+cargo:warning=SecKeyRef SecTrustCopyPublicKey(SecTrustRef trust)
+cargo:warning=          ^
+cargo:warning=curl/lib/vtls/sectransp.c:1815:9: warning: 'SSLHandshake' is deprecated: first deprecated in macOS 10.15 - No longer supported. Use Network.framework. [-Wdeprecated-declarations]
+cargo:warning=  err = SSLHandshake(backend->ssl_ctx);
+cargo:warning=        ^
+cargo:warning=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Security.framework/Headers/SecureTransport.h:1641:1: note: 'SSLHandshake' has been explicitly marked deprecated here
+cargo:warning=SSLHandshake                            (SSLContextRef          context)
+cargo:warning=^
+cargo:warning=curl/lib/vtls/sectransp.c:2053:11: warning: 'SSLGetNegotiatedCipher' is deprecated: first deprecated in macOS 10.15 - No longer supported. Use Network.framework. [-Wdeprecated-declarations]
+cargo:warning=    (void)SSLGetNegotiatedCipher(backend->ssl_ctx, &cipher);
+cargo:warning=          ^
+cargo:warning=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Security.framework/Headers/SecureTransport.h:1314:1: note: 'SSLGetNegotiatedCipher' has been explicitly marked deprecated here
+cargo:warning=SSLGetNegotiatedCipher          (SSLContextRef          context,
+cargo:warning=^
+cargo:warning=curl/lib/vtls/sectransp.c:2054:11: warning: 'SSLGetNegotiatedProtocolVersion' is deprecated: first deprecated in macOS 10.15 - No longer supported. Use Network.framework. [-Wdeprecated-declarations]
+cargo:warning=    (void)SSLGetNegotiatedProtocolVersion(backend->ssl_ctx, &protocol);
+cargo:warning=          ^
+cargo:warning=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Security.framework/Headers/SecureTransport.h:803:1: note: 'SSLGetNegotiatedProtocolVersion' has been explicitly marked deprecated here
+cargo:warning=SSLGetNegotiatedProtocolVersion         (SSLContextRef          context,
+cargo:warning=^
+cargo:warning=curl/lib/vtls/sectransp.c:2059:12: warning: 'kSSLProtocol2' is deprecated: first deprecated in macOS 10.15 [-Wdeprecated-declarations]
+cargo:warning=      case kSSLProtocol2:
+cargo:warning=           ^
+cargo:warning=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Security.framework/Headers/SecProtocolTypes.h:164:5: note: 'kSSLProtocol2' has been explicitly marked deprecated here
+cargo:warning=    kSSLProtocol2 CF_ENUM_DEPRECATED(10_2, 10_15, 5_0, 13_0) = 1,
+cargo:warning=    ^
+cargo:warning=curl/lib/vtls/sectransp.c:2062:12: warning: 'kSSLProtocol3' is deprecated: first deprecated in macOS 10.15 [-Wdeprecated-declarations]
+cargo:warning=      case kSSLProtocol3:
+cargo:warning=           ^
+cargo:warning=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Security.framework/Headers/SecProtocolTypes.h:165:5: note: 'kSSLProtocol3' has been explicitly marked deprecated here
+cargo:warning=    kSSLProtocol3 CF_ENUM_DEPRECATED(10_2, 10_15, 5_0, 13_0) = 2,
+cargo:warning=    ^
+cargo:warning=curl/lib/vtls/sectransp.c:2065:12: warning: 'kTLSProtocol1' is deprecated: first deprecated in macOS 10.15 [-Wdeprecated-declarations]
+cargo:warning=      case kTLSProtocol1:
+cargo:warning=           ^
+cargo:warning=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Security.framework/Headers/SecProtocolTypes.h:157:5: note: 'kTLSProtocol1' has been explicitly marked deprecated here
+cargo:warning=    kTLSProtocol1 CF_ENUM_DEPRECATED(10_2, 10_15, 5_0, 13_0) = 4,
+cargo:warning=    ^
+cargo:warning=curl/lib/vtls/sectransp.c:2069:12: warning: 'kTLSProtocol11' is deprecated: first deprecated in macOS 10.15 [-Wdeprecated-declarations]
+cargo:warning=      case kTLSProtocol11:
+cargo:warning=           ^
+cargo:warning=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Security.framework/Headers/SecProtocolTypes.h:158:5: note: 'kTLSProtocol11' has been explicitly marked deprecated here
+cargo:warning=    kTLSProtocol11 CF_ENUM_DEPRECATED(10_2, 10_15, 5_0, 13_0) = 7,
+cargo:warning=    ^
+cargo:warning=curl/lib/vtls/sectransp.c:2072:12: warning: 'kTLSProtocol12' is deprecated: first deprecated in macOS 10.15 [-Wdeprecated-declarations]
+cargo:warning=      case kTLSProtocol12:
+cargo:warning=           ^
+cargo:warning=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Security.framework/Headers/SecProtocolTypes.h:159:5: note: 'kTLSProtocol12' has been explicitly marked deprecated here
+cargo:warning=    kTLSProtocol12 CF_ENUM_DEPRECATED(10_2, 10_15, 5_0, 13_0) = 8,
+cargo:warning=    ^
+cargo:warning=curl/lib/vtls/sectransp.c:2077:12: warning: 'kTLSProtocol13' is deprecated: first deprecated in macOS 10.15 [-Wdeprecated-declarations]
+cargo:warning=      case kTLSProtocol13:
+cargo:warning=           ^
+cargo:warning=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Security.framework/Headers/SecProtocolTypes.h:161:5: note: 'kTLSProtocol13' has been explicitly marked deprecated here
+cargo:warning=    kTLSProtocol13 CF_ENUM_DEPRECATED(10_2, 10_15, 5_0, 13_0) = 10,
+cargo:warning=    ^
+cargo:warning=curl/lib/vtls/sectransp.c:2092:15: warning: 'SSLCopyALPNProtocols' is deprecated: first deprecated in macOS 10.15 - No longer supported. Use Network.framework. [-Wdeprecated-declarations]
+cargo:warning=        err = SSLCopyALPNProtocols(backend->ssl_ctx, &alpnArr);
+cargo:warning=              ^
+cargo:warning=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Security.framework/Headers/SecureTransport.h:1354:1: note: 'SSLCopyALPNProtocols' has been explicitly marked deprecated here
+cargo:warning=SSLCopyALPNProtocols        (SSLContextRef      context,
+cargo:warning=^
+cargo:warning=curl/lib/vtls/sectransp.c:2217:7: warning: 'SecTrustCopyPublicKey' is deprecated: first deprecated in macOS 11.0 [-Wdeprecated-declarations]
+cargo:warning=  if(&SecTrustCopyPublicKey) {
+cargo:warning=      ^~~~~~~~~~~~~~~~~~~~~
+cargo:warning=      SecTrustCopyKey
+cargo:warning=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Security.framework/Headers/SecTrust.h:476:11: note: 'SecTrustCopyPublicKey' has been explicitly marked deprecated here
+cargo:warning=SecKeyRef SecTrustCopyPublicKey(SecTrustRef trust)
+cargo:warning=          ^
+cargo:warning=curl/lib/vtls/sectransp.c:2219:11: warning: 'SSLCopyPeerTrust' is deprecated: first deprecated in macOS 10.15 - No longer supported. Use Network.framework. [-Wdeprecated-declarations]
+cargo:warning=    err = SSLCopyPeerTrust(backend->ssl_ctx, &trust);
+cargo:warning=          ^
+cargo:warning=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Security.framework/Headers/SecureTransport.h:1261:1: note: 'SSLCopyPeerTrust' has been explicitly marked deprecated here
+cargo:warning=SSLCopyPeerTrust                        (SSLContextRef          context,
+cargo:warning=^
+cargo:warning=curl/lib/vtls/sectransp.c:2227:23: warning: 'SecTrustGetCertificateAtIndex' is deprecated: first deprecated in macOS 12.0 [-Wdeprecated-declarations]
+cargo:warning=        server_cert = SecTrustGetCertificateAtIndex(trust, i);
+cargo:warning=                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cargo:warning=                      SecTrustCopyCertificateChain
+cargo:warning=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Security.framework/Headers/SecTrust.h:523:19: note: 'SecTrustGetCertificateAtIndex' has been explicitly marked deprecated here
+cargo:warning=SecCertificateRef SecTrustGetCertificateAtIndex(SecTrustRef trust, CFIndex ix)
+cargo:warning=                  ^
+cargo:warning=curl/lib/vtls/sectransp.c:2444:11: warning: 'SSLClose' is deprecated: first deprecated in macOS 10.15 - No longer supported. Use Network.framework. [-Wdeprecated-declarations]
+cargo:warning=    err = SSLClose(backend->ssl_ctx);
+cargo:warning=          ^
+cargo:warning=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Security.framework/Headers/SecureTransport.h:1731:1: note: 'SSLClose' has been explicitly marked deprecated here
+cargo:warning=SSLClose                                        (SSLContextRef          context)
+cargo:warning=^
+cargo:warning=curl/lib/vtls/sectransp.c:2512:9: warning: 'SSLCreateContext' is deprecated: first deprecated in macOS 10.15 - No longer supported. Use Network.framework. [-Wdeprecated-declarations]
+cargo:warning=    if(&SSLCreateContext)
+cargo:warning=        ^
+cargo:warning=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Security.framework/Headers/SecureTransport.h:316:1: note: 'SSLCreateContext' has been explicitly marked deprecated here
+cargo:warning=SSLCreateContext(CFAllocatorRef __nullable alloc, SSLProtocolSide protocolSide, SSLConnectionType connectionType)
+cargo:warning=^
+cargo:warning=curl/lib/vtls/sectransp.c:2544:11: warning: 'SSLGetBufferedReadSize' is deprecated: first deprecated in macOS 10.15 - No longer supported. Use Network.framework. [-Wdeprecated-declarations]
+cargo:warning=    err = SSLGetBufferedReadSize(backend->ssl_ctx, &buffer);
+cargo:warning=          ^
+cargo:warning=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Security.framework/Headers/SecureTransport.h:1705:1: note: 'SSLGetBufferedReadSize' has been explicitly marked deprecated here
+cargo:warning=SSLGetBufferedReadSize          (SSLContextRef context,
+cargo:warning=^
+cargo:warning=curl/lib/vtls/sectransp.c:2587:7: warning: 'SSLSetSessionOption' is deprecated: first deprecated in macOS 10.15 - No longer supported. Use Network.framework. [-Wdeprecated-declarations]
+cargo:warning=  if(&SSLSetSessionOption)
+cargo:warning=      ^
+cargo:warning=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Security.framework/Headers/SecureTransport.h:384:1: note: 'SSLSetSessionOption' has been explicitly marked deprecated here
+cargo:warning=SSLSetSessionOption                     (SSLContextRef          context,
+cargo:warning=^
+cargo:warning=curl/lib/vtls/sectransp.c:2624:11: warning: 'SSLWrite' is deprecated: first deprecated in macOS 10.15 - No longer supported. Use Network.framework. [-Wdeprecated-declarations]
+cargo:warning=    err = SSLWrite(backend->ssl_ctx, NULL, 0UL, &processed);
+cargo:warning=          ^
+cargo:warning=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Security.framework/Headers/SecureTransport.h:1670:1: note: 'SSLWrite' has been explicitly marked deprecated here
+cargo:warning=SSLWrite                                        (SSLContextRef          context,
+cargo:warning=^
+cargo:warning=curl/lib/vtls/sectransp.c:2643:11: warning: 'SSLWrite' is deprecated: first deprecated in macOS 10.15 - No longer supported. Use Network.framework. [-Wdeprecated-declarations]
+cargo:warning=    err = SSLWrite(backend->ssl_ctx, mem, len, &processed);
+cargo:warning=          ^
+cargo:warning=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Security.framework/Headers/SecureTransport.h:1670:1: note: 'SSLWrite' has been explicitly marked deprecated here
+cargo:warning=SSLWrite                                        (SSLContextRef          context,
+cargo:warning=^
+cargo:warning=curl/lib/vtls/sectransp.c:2679:9: warning: 'SSLRead' is deprecated: first deprecated in macOS 10.15 - No longer supported. Use Network.framework. [-Wdeprecated-declarations]
+cargo:warning=  err = SSLRead(backend->ssl_ctx, buf, buffersize, &processed);
+cargo:warning=        ^
+cargo:warning=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Security.framework/Headers/SecureTransport.h:1689:1: note: 'SSLRead' has been explicitly marked deprecated here
+cargo:warning=SSLRead                                         (SSLContextRef          context,
+cargo:warning=^
+cargo:warning=56 warnings generated.
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+cargo:rerun-if-env-changed=AR_x86_64-apple-darwin
+AR_x86_64-apple-darwin = None
+cargo:rerun-if-env-changed=AR_x86_64_apple_darwin
+AR_x86_64_apple_darwin = None
+cargo:rerun-if-env-changed=HOST_AR
+HOST_AR = None
+cargo:rerun-if-env-changed=AR
+AR = None
+cargo:rerun-if-env-changed=ARFLAGS_x86_64-apple-darwin
+ARFLAGS_x86_64-apple-darwin = None
+cargo:rerun-if-env-changed=ARFLAGS_x86_64_apple_darwin
+ARFLAGS_x86_64_apple_darwin = None
+cargo:rerun-if-env-changed=HOST_ARFLAGS
+HOST_ARFLAGS = None
+cargo:rerun-if-env-changed=ARFLAGS
+ARFLAGS = None
+cargo:warning=/Library/Developer/CommandLineTools/usr/bin/ranlib: file: /Users/ewinship/Documents/Projects/Sediments/normalize_paired_regions/target/release/build/curl-sys-7a3e9a10ef47c4d7/out/build/libcurl.a(9389f53ac3931463-curl_msh3.o) has no symbols
+cargo:warning=/Library/Developer/CommandLineTools/usr/bin/ranlib: file: /Users/ewinship/Documents/Projects/Sediments/normalize_paired_regions/target/release/build/curl-sys-7a3e9a10ef47c4d7/out/build/libcurl.a(9389f53ac3931463-curl_ngtcp2.o) has no symbols
+cargo:warning=/Library/Developer/CommandLineTools/usr/bin/ranlib: file: /Users/ewinship/Documents/Projects/Sediments/normalize_paired_regions/target/release/build/curl-sys-7a3e9a10ef47c4d7/out/build/libcurl.a(9389f53ac3931463-curl_osslq.o) has no symbols
+cargo:warning=/Library/Developer/CommandLineTools/usr/bin/ranlib: file: /Users/ewinship/Documents/Projects/Sediments/normalize_paired_regions/target/release/build/curl-sys-7a3e9a10ef47c4d7/out/build/libcurl.a(9389f53ac3931463-curl_quiche.o) has no symbols
+cargo:warning=/Library/Developer/CommandLineTools/usr/bin/ranlib: file: /Users/ewinship/Documents/Projects/Sediments/normalize_paired_regions/target/release/build/curl-sys-7a3e9a10ef47c4d7/out/build/libcurl.a(9389f53ac3931463-vquic-tls.o) has no symbols
+cargo:warning=/Library/Developer/CommandLineTools/usr/bin/ranlib: file: /Users/ewinship/Documents/Projects/Sediments/normalize_paired_regions/target/release/build/curl-sys-7a3e9a10ef47c4d7/out/build/libcurl.a(8e8970cf94bc52ea-hostcheck.o) has no symbols
+cargo:warning=/Library/Developer/CommandLineTools/usr/bin/ranlib: file: /Users/ewinship/Documents/Projects/Sediments/normalize_paired_regions/target/release/build/curl-sys-7a3e9a10ef47c4d7/out/build/libcurl.a(8e8970cf94bc52ea-keylog.o) has no symbols
+cargo:warning=/Library/Developer/CommandLineTools/usr/bin/ranlib: file: /Users/ewinship/Documents/Projects/Sediments/normalize_paired_regions/target/release/build/curl-sys-7a3e9a10ef47c4d7/out/build/libcurl.a(9389f53ac3931463-curl_msh3.o) has no symbols
+cargo:warning=/Library/Developer/CommandLineTools/usr/bin/ranlib: file: /Users/ewinship/Documents/Projects/Sediments/normalize_paired_regions/target/release/build/curl-sys-7a3e9a10ef47c4d7/out/build/libcurl.a(9389f53ac3931463-curl_ngtcp2.o) has no symbols
+cargo:warning=/Library/Developer/CommandLineTools/usr/bin/ranlib: file: /Users/ewinship/Documents/Projects/Sediments/normalize_paired_regions/target/release/build/curl-sys-7a3e9a10ef47c4d7/out/build/libcurl.a(9389f53ac3931463-curl_osslq.o) has no symbols
+cargo:warning=/Library/Developer/CommandLineTools/usr/bin/ranlib: file: /Users/ewinship/Documents/Projects/Sediments/normalize_paired_regions/target/release/build/curl-sys-7a3e9a10ef47c4d7/out/build/libcurl.a(9389f53ac3931463-curl_quiche.o) has no symbols
+cargo:warning=/Library/Developer/CommandLineTools/usr/bin/ranlib: file: /Users/ewinship/Documents/Projects/Sediments/normalize_paired_regions/target/release/build/curl-sys-7a3e9a10ef47c4d7/out/build/libcurl.a(9389f53ac3931463-vquic-tls.o) has no symbols
+cargo:warning=/Library/Developer/CommandLineTools/usr/bin/ranlib: file: /Users/ewinship/Documents/Projects/Sediments/normalize_paired_regions/target/release/build/curl-sys-7a3e9a10ef47c4d7/out/build/libcurl.a(8e8970cf94bc52ea-hostcheck.o) has no symbols
+cargo:warning=/Library/Developer/CommandLineTools/usr/bin/ranlib: file: /Users/ewinship/Documents/Projects/Sediments/normalize_paired_regions/target/release/build/curl-sys-7a3e9a10ef47c4d7/out/build/libcurl.a(8e8970cf94bc52ea-keylog.o) has no symbols
+cargo:warning=/Library/Developer/CommandLineTools/usr/bin/ranlib: file: /Users/ewinship/Documents/Projects/Sediments/normalize_paired_regions/target/release/build/curl-sys-7a3e9a10ef47c4d7/out/build/libcurl.a(9389f53ac3931463-curl_msh3.o) has no symbols
+cargo:warning=/Library/Developer/CommandLineTools/usr/bin/ranlib: file: /Users/ewinship/Documents/Projects/Sediments/normalize_paired_regions/target/release/build/curl-sys-7a3e9a10ef47c4d7/out/build/libcurl.a(9389f53ac3931463-curl_ngtcp2.o) has no symbols
+cargo:warning=/Library/Developer/CommandLineTools/usr/bin/ranlib: file: /Users/ewinship/Documents/Projects/Sediments/normalize_paired_regions/target/release/build/curl-sys-7a3e9a10ef47c4d7/out/build/libcurl.a(9389f53ac3931463-curl_osslq.o) has no symbols
+cargo:warning=/Library/Developer/CommandLineTools/usr/bin/ranlib: file: /Users/ewinship/Documents/Projects/Sediments/normalize_paired_regions/target/release/build/curl-sys-7a3e9a10ef47c4d7/out/build/libcurl.a(9389f53ac3931463-curl_quiche.o) has no symbols
+cargo:warning=/Library/Developer/CommandLineTools/usr/bin/ranlib: file: /Users/ewinship/Documents/Projects/Sediments/normalize_paired_regions/target/release/build/curl-sys-7a3e9a10ef47c4d7/out/build/libcurl.a(9389f53ac3931463-vquic-tls.o) has no symbols
+cargo:warning=/Library/Developer/CommandLineTools/usr/bin/ranlib: file: /Users/ewinship/Documents/Projects/Sediments/normalize_paired_regions/target/release/build/curl-sys-7a3e9a10ef47c4d7/out/build/libcurl.a(8e8970cf94bc52ea-hostcheck.o) has no symbols
+cargo:warning=/Library/Developer/CommandLineTools/usr/bin/ranlib: file: /Users/ewinship/Documents/Projects/Sediments/normalize_paired_regions/target/release/build/curl-sys-7a3e9a10ef47c4d7/out/build/libcurl.a(8e8970cf94bc52ea-keylog.o) has no symbols
+cargo:rustc-link-lib=static=curl
+cargo:rustc-link-search=native=/Users/ewinship/Documents/Projects/Sediments/normalize_paired_regions/target/release/build/curl-sys-7a3e9a10ef47c4d7/out/build
+cargo:rustc-link-lib=framework=Security
+cargo:rustc-link-lib=framework=CoreFoundation
+cargo:rustc-link-lib=framework=CoreServices
+cargo:rustc-link-lib=framework=SystemConfiguration

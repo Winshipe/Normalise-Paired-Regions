@@ -1,0 +1,11 @@
+/Users/au703041/Documents/Projects/Sediments/normalize_paired_regions/target/release/deps/libfs_utils-1fe2fd5272d37b52.rmeta: /Users/au703041/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fs-utils-1.1.4/src/lib.rs /Users/au703041/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fs-utils-1.1.4/src/check.rs /Users/au703041/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fs-utils-1.1.4/src/copy.rs /Users/au703041/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fs-utils-1.1.4/src/read.rs /Users/au703041/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fs-utils-1.1.4/src/remove.rs
+
+/Users/au703041/Documents/Projects/Sediments/normalize_paired_regions/target/release/deps/libfs_utils-1fe2fd5272d37b52.rlib: /Users/au703041/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fs-utils-1.1.4/src/lib.rs /Users/au703041/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fs-utils-1.1.4/src/check.rs /Users/au703041/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fs-utils-1.1.4/src/copy.rs /Users/au703041/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fs-utils-1.1.4/src/read.rs /Users/au703041/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fs-utils-1.1.4/src/remove.rs
+
+/Users/au703041/Documents/Projects/Sediments/normalize_paired_regions/target/release/deps/fs_utils-1fe2fd5272d37b52.d: /Users/au703041/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fs-utils-1.1.4/src/lib.rs /Users/au703041/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fs-utils-1.1.4/src/check.rs /Users/au703041/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fs-utils-1.1.4/src/copy.rs /Users/au703041/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fs-utils-1.1.4/src/read.rs /Users/au703041/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fs-utils-1.1.4/src/remove.rs
+
+/Users/au703041/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fs-utils-1.1.4/src/lib.rs:
+/Users/au703041/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fs-utils-1.1.4/src/check.rs:
+/Users/au703041/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fs-utils-1.1.4/src/copy.rs:
+/Users/au703041/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fs-utils-1.1.4/src/read.rs:
+/Users/au703041/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fs-utils-1.1.4/src/remove.rs:

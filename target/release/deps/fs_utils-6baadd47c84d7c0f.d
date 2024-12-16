@@ -1,0 +1,11 @@
+/Users/ewinship/Documents/Projects/Sediments/normalize_paired_regions/target/release/deps/libfs_utils-6baadd47c84d7c0f.rmeta: /Users/ewinship/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fs-utils-1.1.4/src/lib.rs /Users/ewinship/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fs-utils-1.1.4/src/check.rs /Users/ewinship/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fs-utils-1.1.4/src/copy.rs /Users/ewinship/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fs-utils-1.1.4/src/read.rs /Users/ewinship/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fs-utils-1.1.4/src/remove.rs
+
+/Users/ewinship/Documents/Projects/Sediments/normalize_paired_regions/target/release/deps/libfs_utils-6baadd47c84d7c0f.rlib: /Users/ewinship/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fs-utils-1.1.4/src/lib.rs /Users/ewinship/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fs-utils-1.1.4/src/check.rs /Users/ewinship/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fs-utils-1.1.4/src/copy.rs /Users/ewinship/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fs-utils-1.1.4/src/read.rs /Users/ewinship/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fs-utils-1.1.4/src/remove.rs
+
+/Users/ewinship/Documents/Projects/Sediments/normalize_paired_regions/target/release/deps/fs_utils-6baadd47c84d7c0f.d: /Users/ewinship/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fs-utils-1.1.4/src/lib.rs /Users/ewinship/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fs-utils-1.1.4/src/check.rs /Users/ewinship/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fs-utils-1.1.4/src/copy.rs /Users/ewinship/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fs-utils-1.1.4/src/read.rs /Users/ewinship/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fs-utils-1.1.4/src/remove.rs
+
+/Users/ewinship/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fs-utils-1.1.4/src/lib.rs:
+/Users/ewinship/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fs-utils-1.1.4/src/check.rs:
+/Users/ewinship/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fs-utils-1.1.4/src/copy.rs:
+/Users/ewinship/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fs-utils-1.1.4/src/read.rs:
+/Users/ewinship/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fs-utils-1.1.4/src/remove.rs:
