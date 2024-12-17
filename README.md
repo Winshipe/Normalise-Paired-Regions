@@ -5,11 +5,12 @@ This requires at least two bam files (sorted & indexed) and a tab separated list
 Normalizes coverage between regions given by a tab separated file
 ie chr:1-1000<tab>chr2:1000-2000<tab>...
 
-The minimum coverage setting will cause regions which fall below the threshold to be skipped and the matching regions will instead be normalized to the lowest which falls above the threshold. e.g.
---min_covg 5 on the following
-R1: 7x, R2: 3x, R3: 10x, R4: 8x
-would yield
-R1: 7x, R2: 3x, R3: 7x, R4: 7x
+The minimum coverage setting will cause regions which fall below the threshold to be skipped and the matching regions will instead be normalized to the lowest which falls above the threshold. For example:
+
+--min_covg 5 on the following<br>
+Reg1: 7x, Reg2: 3x, Reg3: 10x, Reg4: 8x<br>
+would yield<br>
+Reg1: 7x, Reg2: 3x, Reg3: 7x, Reg4: 7x
 
 Usage: normalize_paired_regions [OPTIONS] --regions <PATH> --bams <PATHS>...
 
