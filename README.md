@@ -9,6 +9,7 @@ The minimum coverage setting will cause regions which fall below the threshold t
 
 For example: --min_covg 5 on the following would yield<br>
 | --- | Region 1 | Region 2 | | Region 3 | Region 4 |
+| --- | --- | --- | --- | --- |
 | Original | 7x | 3x | 10x | 8x |
 | Norm'ed | 7x | 3x | 7x | 7x | 
 Usage: normalize_paired_regions [OPTIONS] --regions <PATH> --bams <PATHS>...
